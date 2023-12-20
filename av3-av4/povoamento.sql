@@ -504,24 +504,8 @@ VALUES
 INSERT INTO
     Empresta (cpf_cliente, cpf_func, isbn, numero_da_copia, data_de_emprestimo, cpf_func_multa, valor_multa)
 VALUES
-    ('444.555.666-77', '321.098.765-67', '8471118484671', 1, '2023-12-20', '', 0);
+    ('222.333.444-55', '876.543.210-34', '2435161484111', 1, '2023-12-21', '', 0);
 INSERT INTO
     Empresta (cpf_cliente, cpf_func, isbn, numero_da_copia, data_de_emprestimo, cpf_func_multa, valor_multa)
 VALUES
-    ('222.333.444-55', '876.543.210-34', '3452261118311', 3, '2023-12-21', '', 0);
-INSERT INTO
-    Empresta (cpf_cliente, cpf_func, isbn, numero_da_copia, data_de_emprestimo, cpf_func_multa, valor_multa)
-VALUES
-    ('999.888.777-66', '987.654.321-45', '983515482112', 1, '2023-12-22', '', 0);
-INSERT INTO
-    Empresta (cpf_cliente, cpf_func, isbn, numero_da_copia, data_de_emprestimo, cpf_func_multa, valor_multa)
-VALUES
-    ('777.888.999-00', '567.890.123-56', '7452261118900', 4, '2023-12-23', '', 0);
-INSERT INTO
-    Empresta (cpf_cliente, cpf_func, isbn, numero_da_copia, data_de_emprestimo, cpf_func_multa, valor_multa)
-VALUES
-    ('666.777.888-99', '321.098.765-67', '9783161484100', 2, '2023-12-24', '', 0);
-INSERT INTO
-    Empresta (cpf_cliente, cpf_func, isbn, numero_da_copia, data_de_emprestimo, cpf_func_multa, valor_multa)
-VALUES
-    ('333.444.555-66', '111.222.333-44', '1233161485610', 1, '2023-12-25', '', 0);
+    ('666.777.888-99', '321.098.765-67', '3452261118311', 3, '2023-12-24', '', 0);
