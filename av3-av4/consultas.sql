@@ -20,11 +20,10 @@ WHERE cpf_func = '123.456.789-09';
 DELETE FROM Livro_emprestado
 WHERE cpf_cliente = '111.222.333-44' AND livro_emprestado = 4;
 
--- Mostra nome e ano de publicação das 5 obras mais recentes
+-- Mostra nome e ano de publicação em ordem decrescente de ano de publicação
 SELECT nome, ano_de_publicacao
 FROM Obra
-ORDER BY ano_de_publicacao DESC
-LIMIT 5;
+ORDER BY ano_de_publicacao DESC;
 
 -- Média de páginas por gênero
 SELECT genero, AVG(numero_de_paginas) AS media_paginas
@@ -88,7 +87,7 @@ GROUP BY Obra.nome;
 -- Permite que o usuário my_user possa ler, inserir e atualizar dados da tabela Moradia
 GRANT SELECT, INSERT, UPDATE ON Moradia TO my_user; -- Não testar no Oracle!!! Ele não reconhece
 
--- Mostra CPF e nome de pessoas que possuem livro emprestado do gênero "Clássico"
+-- Mostra CPF e nome de pessoas que possuem livro emprestado do gênero "Infanto-juvenil"
 SELECT cpf, nome
 FROM Pessoa
 WHERE cpf IN (
@@ -98,6 +97,6 @@ WHERE cpf IN (
     JOIN Empresta ON Livro_emprestado.cpf_cliente = Empresta.cpf_cliente
     JOIN Copia ON Empresta.isbn = Copia.isbn AND Empresta.numero_da_copia = Copia.numero_da_copia
     JOIN Obra ON Copia.isbn = Obra.isbn
-    WHERE Obra.genero = 'Classico'
+    WHERE Obra.genero = 'Infanto-juvenil'
 );
 
